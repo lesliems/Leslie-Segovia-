@@ -1,0 +1,29 @@
+div{
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 1px;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    
+}
+body{
+    background-image: url(http://newscoma.com/wp-content/uploads/2010/11/walking-dead-s1e1-Days-Gone-By-01.jpg);
+    border-color: white;
+	border-style: solid;
+	border-width: 5px;
+        font-family: Verdana, Geneva, sans-serif;
+	font-size: 36px;
+        color: white;
+}
+a{
+    color: white;
+}
+image{
+    width: 200px;
+    height: auto;
+    padding-left: 410px;
+}
