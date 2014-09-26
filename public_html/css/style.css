@@ -10,8 +10,8 @@ h1{
         color: white;
 }  
 body{
-     /* background-image: url(http://newscoma.com/wp-content/uploads/2010/11/walking-dead-s1e1-Days-Gone-By-01.jpg);*/
-        background: url(../images/twd5.png);
+     /*background-image: url(http://newscoma.com/wp-content/uploads/2010/11/walking-dead-s1e1-Days-Gone-By-01.jpg);*/
+       /* background: url(../images/twd5.png);*/
        border-color: white;
         font-family: Verdana, Geneva, sans-serif;
 	font-size: 36px;
@@ -22,14 +22,16 @@ body{
    
 a{
   font-size: 30px;
-  padding: 30px;
+ /* padding: 110px;*/
   
 }
+/*for all images*/
 img {
-    width: 800px;
+    width: 500px;
     height: auto;
-    padding-left:280px;
+   position:absolute;
 }
+/*for all paragraphs*/ 
 p {
 	position: relative;
 	font-size: 18px;
@@ -37,7 +39,17 @@ p {
 	color: whitesmoke;
 	font-family: Verdana, Geneva, sans-serif;
   }
-  div{
-      color: aqua;
+  /*For the background*/
+  #index{
+     /* background-image: url(http://newscoma.com/wp-content/uploads/2010/11/walking-dead-s1e1-Days-Gone-By-01.jpg);*/
+     background: url(../images/twd5.png);
+      background-size: cover;
+      font-size: 30px;
+  }
+  .dropdown{
+      color: background;
+  }
+  #carousel-example-generic{
+      background-color: black;
   }
   
