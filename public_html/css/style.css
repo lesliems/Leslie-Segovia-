@@ -29,6 +29,7 @@ body{
 a{
     font-size: 30px;
     padding: 10px;
+    
 }
 /*for all paragraphs */
 p {
@@ -48,6 +49,7 @@ p img {
     padding: 0;
     max-width: 100%;
     height: auto;
+
 }
 /*for the videos*/
 object{
@@ -66,4 +68,10 @@ object{
 }
 img{
     padding-left: 120px;
+}
+label{
+    font-size: 25px;
+}
+tags{
+    font-size: 10px;
 }
