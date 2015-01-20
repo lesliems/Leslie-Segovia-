@@ -29,7 +29,7 @@ body{
 a{
     font-size: 30px;
     padding: 10px;
-    
+
 }
 /*for all paragraphs */
 p {
@@ -65,6 +65,7 @@ object{
     background-repeat: no-repeat;
     color: white;
     text-shadow: black 0.3em 0.3em 0.3em;
+    margin-bottom: 30px;
 }
 img{
     padding-left: 120px;
@@ -74,4 +75,7 @@ label{
 }
 tags{
     font-size: 10px;
+}
+navbar-inverse{
+    padding: 5px;
 }

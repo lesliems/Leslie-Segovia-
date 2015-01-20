@@ -7,19 +7,12 @@
 $("document").ready(function() {
     $("#title").css("background-color", "black");
     $('h4:first').css({"color": "white"});
-    $('p:first').css({"text-align": "left"});
-    $('input').css('width', '150px');
+    $('p:first').css({"text-align": "center"});
+    $('input').css('width', '120px');
     $('input').css('height', '30px');
     $('input').css('padding-bottom', '5px');
     $('input').css('color', 'grey');
     $('input').css('font-size', 'small');
-});
-//for the jumbotron
-$("document").ready(function() {
-    //$("..jumbrotron").css('background-image', "src");
-//    $(".jumbotron").css('background-image', "url(http://www.walkingdeadcast.com/wp-content/uploads/2015/01/SEASON-4-COMPLETE-CAST-POSTER-The-Walking-Dead-the-walking-dead-35777405-2528-670.png)");
-//    $(".jumbotron").css("text-align", "center");
-//    $(".jumbotron").css("color", "white");
 });
 //for 
 $("document").ready(function() {
@@ -29,6 +22,7 @@ $("document").ready(function() {
 $("document").ready(function() {
 //    $(".ui-widget").css("color", "grey");
 });
+
 
 $(function() {
     var availableTags = [
@@ -48,3 +42,13 @@ $(function() {
         source: availableTags
     });
 });
+function mouseOver() {
+    $("h1").html("MouseOn");
+    $("p").html("Rick Grimes");
+    $("#second").hmtl("still alive");
+}
+function mouseOff(){
+    $('.2').css('visibility', 'hidden');
+    $('.1').css('visibility', 'visible');
+    $("#second").html("Rick grimes");
+}
