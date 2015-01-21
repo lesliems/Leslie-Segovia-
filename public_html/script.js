@@ -19,9 +19,9 @@ $("document").ready(function() {
     $(".img-responsive").css("position", "center");
 });
 
-$("document").ready(function() {
-//    $(".ui-widget").css("color", "grey");
-});
+//$("document").ready(function() {
+//        $('.navbar-inverse').css('font-size', '36px');
+//});
 
 
 $(function() {
@@ -42,13 +42,16 @@ $(function() {
         source: availableTags
     });
 });
-function mouseOver() {
-    $("h1").html("MouseOn");
-    $("p").html("Rick Grimes");
-    $("#second").hmtl("still alive");
+$('#names').bind(mouseover, mouseOverMe).bind('mouseout', mouseOutMe);
+function mouseOverMe() {
+    $("#h1").html("Still alive");
+//    $("h1").html("MouseOn");
+//    $("p").html("Rick Grimes");
+//    $("#second").hmtl("still alive");
 }
-function mouseOff(){
-    $('.2').css('visibility', 'hidden');
-    $('.1').css('visibility', 'visible');
-    $("#second").html("Rick grimes");
+function mouseOutMe(){
+    $("#h1").html("Rick Grimes");
+//    $('.2').css('visibility', 'hidden');
+//    $('.1').css('visibility', 'visible');
+//    $("#second").html("Rick grimes");
 }

@@ -76,6 +76,8 @@ label{
 tags{
     font-size: 10px;
 }
-navbar-inverse{
-    padding: 5px;
+.navbar {
+position: relative;
+margin-bottom: 20px;
+border: 1px solid transparent;
 }
