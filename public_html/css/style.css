@@ -58,7 +58,6 @@ object{
 }
 /*For all the jumbotrons*/
 .jumbotron {
-    margin-bottom: 0px;
     background-image: url(../images/twd6.png);
     background-position: 0% 25%;
     background-size: cover;
@@ -71,14 +70,14 @@ img{
     padding-left: 120px;
 }
 label{
-    font-size: 25px;
+    font-size: 20px;
 }
 tags{
     font-size: 10px;
 }
 .navbar {
 position: relative;
-margin-bottom: 20px;
+margin-bottom: 5px;
 border: 1px solid transparent;
 }
 #accordion{

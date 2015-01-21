@@ -8,11 +8,13 @@ $("document").ready(function() {
     $("#title").css("background-color", "black");
     $('h4:first').css({"color": "white"});
     $('p:first').css({"text-align": "center"});
-    $('input').css('width', '120px');
-    $('input').css('height', '30px');
-    $('input').css('padding-bottom', '5px');
-    $('input').css('color', 'grey');
-    $('input').css('font-size', 'small');
+    $('#tags').css('width', '120px');
+    $('#tags').css('height', '30px');
+    $('#tags').css('padding-bottom', '5px');
+    $('label').css('color', 'white');
+    $('#tags').css('font-size', 'small');
+    $('#tags').css('color','grey' );
+    $("h2").bind('mouseover', mouseOverMe).bind('mouseout', mouseOuteMe);
 });
 //for 
 $("document").ready(function() {
@@ -44,16 +46,11 @@ $(function() {
 });
 $('#names').bind(mouseover, mouseOverMe).bind('mouseout', mouseOutMe);
 function mouseOverMe() {
-    $("#h1").html("Still alive");
-//    $("h1").html("MouseOn");
-//    $("p").html("Rick Grimes");
-//    $("#second").hmtl("still alive");
+    $("h2").html("Akljb");
+    
 }
 function mouseOutMe(){
-    $("#h1").html("Rick Grimes");
-//    $('.2').css('visibility', 'hidden');
-//    $('.1').css('visibility', 'visible');
-//    $("#second").html("Rick grimes");
+    $("h2").html("Rick Grimes");
 }
 $(function() {
     $( '#accordion > p' ).hide();
