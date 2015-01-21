@@ -55,3 +55,10 @@ function mouseOutMe(){
 //    $('.1').css('visibility', 'visible');
 //    $("#second").html("Rick grimes");
 }
+$(function() {
+    $( '#accordion > p' ).hide();
+        $( '#accordion h3').click(function(){
+           $(this).siblings('p:visible').slideUp('2000');
+           $(this).next().animate({'height':'toggle'}, '2000', 'easeInOutExpo');
+        });
+  });

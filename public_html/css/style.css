@@ -81,3 +81,10 @@ position: relative;
 margin-bottom: 20px;
 border: 1px solid transparent;
 }
+#accordion{
+    background-color: black;
+    color:whitesmoke;
+    padding: 10px;
+    overflow: hidden;
+    
+}
