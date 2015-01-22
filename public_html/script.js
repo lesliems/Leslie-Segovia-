@@ -13,19 +13,25 @@ $("document").ready(function() {
     $('#tags').css('padding-bottom', '5px');
     $('label').css('color', 'white');
     $('#tags').css('font-size', 'small');
-    $('#tags').css('color','grey' );
-    $("h2").bind('mouseover', mouseOverMe).bind('mouseout', mouseOuteMe);
+    $('#tags').css('color', 'grey');
+    $(".names").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $('#rick').css('width', '200');
+    $('#rick').css('height', '100');
+    $('#rick').css('position', 'left');
+    $('#carl').css('width', '200');
+    $('#carl').css('height', '100');
+    $('#lori').css('width', '200');
+    $('#lori').css('height', '100');
+    $(".alive").css('border-color', 'black');
+    $(".dead").css('border-color', 'black');
+
+
+    $('#accordion').accordion({header: "h5"});
 });
 //for 
 $("document").ready(function() {
     $(".img-responsive").css("position", "center");
 });
-
-//$("document").ready(function() {
-//        $('.navbar-inverse').css('font-size', '36px');
-//});
-
-
 $(function() {
     var availableTags = [
         "All About Me",
@@ -42,20 +48,22 @@ $(function() {
     ];
     $("#tags").autocomplete({
         source: availableTags
+
     });
 });
-$('#names').bind(mouseover, mouseOverMe).bind('mouseout', mouseOutMe);
+$('#alive').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 function mouseOverMe() {
-    $("h2").html("Akljb");
-    
+    $(".alive").html("<h6>Alive</h6>");
+    $(".alive").html("<h6>Alive</h6>");
 }
-function mouseOutMe(){
-    $("h2").html("Rick Grimes");
+function mouseOutMe() {
+    $(".alive").html("<h6>Rick Grimes</h6>");
+    $(".alive").html("<h6>Carl Grimes</h6>");
 }
-$(function() {
-    $( '#accordion > p' ).hide();
-        $( '#accordion h3').click(function(){
-           $(this).siblings('p:visible').slideUp('2000');
-           $(this).next().animate({'height':'toggle'}, '2000', 'easeInOutExpo');
-        });
-  });
+//$('#dead').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+//function mouseOverMe() {
+//    $(".dead").html("<h6>Dead</h6>");
+//}
+//function mouseOutMe() {
+//    $(".dead").html("<h6>Lori Grimes</h6>");
+//}
