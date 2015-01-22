@@ -7,7 +7,9 @@
 $("document").ready(function() {
     $("#title").css("background-color", "black");
     $('h4:first').css({"color": "white"});
-    $('p:first').css({"text-align": "center"});
+    $('h1:first').css({"text-align": "center"});
+    $('h1:first').css({"color": "white"});
+    $('p').css({"color": "black"});
     $('#tags').css('width', '120px');
     $('#tags').css('height', '30px');
     $('#tags').css('padding-bottom', '5px');
@@ -24,14 +26,19 @@ $("document").ready(function() {
     $('#lori').css('height', '100');
     $(".alive").css('border-color', 'black');
     $(".dead").css('border-color', 'black');
-
-
+    $('#accordion').css('color', 'black');
+    $('button').css('width', '50px');
+    $('button').css('heigth', '50px');
+    $('button').css('font-size', '10px');
+    $('button').css('color', 'black');
     $('#accordion').accordion({header: "h5"});
+
 });
 //for 
 $("document").ready(function() {
     $(".img-responsive").css("position", "center");
 });
+//for the search bar; tags for search bar
 $(function() {
     var availableTags = [
         "All About Me",
@@ -44,7 +51,8 @@ $(function() {
         "Season 1",
         "Season 2",
         "Season 3",
-        "Season 4"
+        "Season 4",
+        "Season 5"
     ];
     $("#tags").autocomplete({
         source: availableTags
@@ -53,8 +61,8 @@ $(function() {
 });
 $('#alive').bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
 function mouseOverMe() {
-    $(".alive").html("<h6>Alive</h6>");
-    $(".alive").html("<h6>Alive</h6>");
+    $(".alive").html("<h6>Surviving</h6>");
+    $(".alive").html("<h6>Surviving</h6>");
 }
 function mouseOutMe() {
     $(".alive").html("<h6>Rick Grimes</h6>");
@@ -67,3 +75,14 @@ function mouseOutMe() {
 //function mouseOutMe() {
 //    $(".dead").html("<h6>Lori Grimes</h6>");
 //}
+function hideTheImage(){
+    $('#rick').hide('explode', {}, 2500);
+}
+function showTheImage(){
+    $('#rick').show('fold', {}, 2500);
+}
+$("document").ready(function() {
+  $('#hidePic').bind('click', hideTheImage);
+  $('#showPic').bind('click', showTheImage);
+});
+
